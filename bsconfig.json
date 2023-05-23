@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+  "name": "coding-exercise-template",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "app",
+      "subdirs": true
+    },
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bsc-flags": [
+    "-bs-super-errors",
+    "-bs-no-version-header"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".js",
+  "namespace": true,
+  "bs-dependencies": [
+    "@rescript/react"
+  ],
+  "bs-dev-dependencies": [],
+  "refmt": 3,
+  "warnings": {
+    "number": "+A-4-42-48-26-27-102",
+    "error": "+A-4-44"
+  }
+}

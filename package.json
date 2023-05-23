@@ -1,12 +1,14 @@
 {
   "name": "coding-exercise-template",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3003",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3003",
+    "lint": "next lint",
+    "re:build": "rescript build -with-deps",
+    "re:watch": "rescript build -with-deps -w",
+    "re:clean": "rescript clean -with-deps"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
